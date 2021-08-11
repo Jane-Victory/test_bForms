@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>bootstrap Forms!</title>
+  </head>
+  <body>
+   <div class="container  ">
+		<form>
+			<div class = "form-group">
+			<label for="inputEmail">Email</label>
+			<input type="email" class="form-control" id="inputEmail" placeholder="xyz@abc.com">
+			</div>
+			<div class = "form-group">
+			<label for="inputPassword">Password</label>
+			<input type="password" class="form-control" id="inputpassword">
+			</div>
+			<div class = "form-group">
+			<label class = "form-check-label"> <input type="checkbox"> Remember</label>
+			</div>
+			<button type="submit" class="btn btn-primary">Sign in</button>
+		</form>
+		<hr>
+		<form>
+			<div class = "form-group row">
+			<label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+			<div class="col-sm-10">
+			<input type="email" class="form-control" id="inputEmail" placeholder="xyz@abc.com">
+			</div></div>
+			<div class = "form-group row">
+			<label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+			<div class="col-sm-10">
+			<input type="password" class="form-control" id="inputpassword">
+			</div></div>
+			<div class = "form-group row">
+			<div class="col-sm-10 offset-sm-2">
+			<label class = "form-check-label"> <input type="checkbox"> Remember</label>
+			</div></div>
+			<div class = "form-group row">
+			<div class="col-sm-10 offset-sm-2">
+			<button type="submit" class="btn btn-primary">Sign in</button>
+			</div></div>
+			<hr>
+			<!--inline form-->
+<form class="form-inline">
+    <div class="form-group mr-3">
+        <label class="sr-only" for="inputEmail">Email</label>
+        <input type="email" class="form-control mr-1" id="inputEmail" placeholder="Email">
+    </div>
+    <div class="form-group mr-3">
+        <label class="sr-only" for="inputPassword">Password</label>
+        <input type="password" class="form-control mr-1" id="inputPassword" placeholder="Password">
+    </div>
+    <div class="form-group mr-3">        
+        <label><input type="checkbox" class="mr-1"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
+<hr><!--static value form-->
+<form>
+    <div class="form-group row">
+        <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+            <input type="text" readonly class="form-control-plaintext" id="inputEmail" value="peterparker@example.com">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-10 offset-sm-2">
+            <div class="checkbox">
+                <label><input type="checkbox"> Remember me</label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-10 offset-sm-2">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+    </div>
+</form>
+<hr><!--vertically stacked checkboxes and radios-->
+<div class="form-group">
+    <label class="d-block">
+        <input type="checkbox" class="mr-1" name="sports"> Cricket
+    </label>
+    <label class="d-block">
+        <input type="checkbox" class="mr-1" name="sports"> Football
+    </label>
+    <label class="d-block">
+        <input type="checkbox" class="mr-1" name="sports"> Tennis
+    </label>
+</div>
+<hr>
+<div class="form-group">
+    <label class="d-block">
+        <input type="radio" class="mr-1" name="gender"> Male
+    </label>
+    <label class="d-block">
+        <input type="radio" class="mr-1" name="gender"> Female
+    </label>
+</div><!Inline checkboxes and radios->
+<div class="form-group">
+    <label class="mr-3">
+        <input type="checkbox" class="mr-1" name="sports"> Cricket
+    </label>
+    <label class="mr-3">
+        <input type="checkbox" class="mr-1" name="sports"> Football
+    </label>
+    <label class="mr-3">
+        <input type="checkbox" class="mr-1" name="sports"> Tennis
+    </label>
+</div>
+<hr>
+<div class="form-group">
+    <label class="mr-3">
+        <input type="radio" class="mr-1" name="gender"> Male
+    </label>
+    <label class="mr-3">
+        <input type="radio" class="mr-1" name="gender"> Female
+    </label>
+</div>
+<!--diabled form-->
+<input type="text" class="form-control mb-2" placeholder="Disabled input" disabled>
+<textarea class="form-control mb-2" placeholder="Disabled textarea" disabled></textarea>
+<select id="disabledSelect" class="form-control" disabled>
+    <option>Disabled select</option>
+</select>
+<hr>
+<form>
+    <fieldset disabled>
+        <div class="form-group row">
+            <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-10 offset-sm-2">
+                <label class="form-check-label"><input type="checkbox"> Remember me</label>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-10 offset-sm-2">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+        </div>
+    </fieldset>
+</form>
+
+		
+
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+   
+  </body>
+</html>
